@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+ifrom flask import Flask, request, render_template
 import requests
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
@@ -9,7 +9,7 @@ import base64
 
 app = Flask(__name__)
 
-OPENWEATHER_API_KEY = '59f029e0a70559e8fee2409d7c29765e'  # <-- Insert your key here
+OPENWEATHER_API_KEY = 'api_key'  # <-- Insert your key here
 
 def get_weather_data(lat, lon):
     url = f'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=metric&appid={OPENWEATHER_API_KEY}'
