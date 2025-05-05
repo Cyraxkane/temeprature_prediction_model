@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Feels Like Temperature Prediction</title>
+</head>
+<body>
+  <h1>Feels Like Temperature Prediction</h1>
+  <form method="post">
+    Latitude: <input type="text" name="lat" required><br>
+    Longitude: <input type="text" name="lon" required><br>
+    <input type="submit" value="Predict">
+  </form>
+  {% if image %}
+  <h2>Result:</h2>
+  <img src="data:image/png;base64,{{ image }}" alt="Temperature Graph">
+  {% endif %}
+</body>
+</html>
